@@ -1,19 +1,19 @@
 
 class Product {
   final String id;
-   int quantity;
+  final int quantity;
   final double price;
   final int sequence;
  
 
-   int selectedQuantity;
+ 
 
   Product({
     required this.id,
     required this.quantity,
     required this.price,
     required this.sequence,
-      this.selectedQuantity = 10,
+      
   });
 
   factory Product.fromJson(Map<String, dynamic> json) {

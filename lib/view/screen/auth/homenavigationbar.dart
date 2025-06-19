@@ -4,12 +4,15 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../controller/orderscontroller.dart';
+
 class HomeNavigation extends StatelessWidget {
   const HomeNavigation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     Get.put(HomeNavigationControllerImp());
+     Get.put(OrdersControllerImp()); 
     return GetBuilder<HomeNavigationControllerImp>(
         builder: (controller) => Scaffold(
               

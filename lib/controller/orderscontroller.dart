@@ -112,7 +112,7 @@ Future<void> pay(String address, BuildContext context) async {
         allSuccess = false;
         Get.snackbar(
           "Error",
-          "فشل الدفع للطلب رقم ${order.orderId}",
+          " Payments failed for order: ${order.orderId}",
           backgroundColor: AppColor.error,
           colorText: Colors.white,
         );
